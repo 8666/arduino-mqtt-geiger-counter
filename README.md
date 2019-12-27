@@ -11,3 +11,5 @@ You can get all of the components on AliExpress or any similar site.
 The output pin from the DIY kit is connected to pin 3 on the Arduino
 
 
+
+![Alt text](https://raw.githubusercontent.com/8666/arduino-mqtt-geiger-counter/master/photo.jpeg "The kit")
