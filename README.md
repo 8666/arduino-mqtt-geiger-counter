@@ -21,12 +21,14 @@ Be sure to use good power supply as the measurments will be different with sligt
 The geiger coutnr kit should be calibrated. There is a potentiometer that should be ajdusted with a small screwdriver. Also I added heatshrink over the tube, that should eliminate beta radiation and the red tape just mark the positive side.
 
 
-*Calibration*
+
+**Calibration**
 
 TBD
 
 
-*Processing data*
+
+**Processing data**
 
 MQTT data are processed with Node-Red. I calculate hourly average and check if there is some probelm with the measurments (no new data avaialble)
 
@@ -34,7 +36,7 @@ TBD Post Node-Red  flow
 
 
 
-*Publishing the data*
+**Publishing the data**
 
 
 I use https://radmon.org/index.php to publish the data. Looks like the only platform of this kind.
