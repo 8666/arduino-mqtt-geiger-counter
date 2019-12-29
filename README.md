@@ -24,3 +24,25 @@ The geiger coutnr kit should be calibrated. There is a potentiometer that should
 *Calibration*
 
 TBD
+
+
+*Processing data*
+
+MQTT data are processed with Node-Red. I calculate hourly average and check if there is some probelm with the measurments (no new data avaialble)
+
+TBD Post Node-Red  flow
+
+
+
+*Publishing the data*
+
+
+I use https://radmon.org/index.php to publish the data. Looks like the only platform of this kind.
+
+Just join and then you will be able to upload your data. 
+
+The webhook looks like this:
+
+http://radmon.org/radmon.php?function=submit&user=USERNAME&password=PASSWORD&unit=CPM&value=MEASURED
+
+Comparing the data with other people is almost impossible. Different tubes produce different measurments but after a month you will have a good picture about the average background radiation. 
