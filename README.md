@@ -37,14 +37,14 @@ Different tubes need different voltage but there is a good chance that the adjus
 5. Measure voltage between GND and J2 point
 
 Most likely you will get a kit with J305β tube
-The recommended voltege for it is 350V
+The recommended voltsge for it is 350V
 
-Adjust voltage with R100 to 6.5V if you use 1M multimeter (internal resistance) or adjust the voltage to 57V if you
-use 10M multimeter.
+For example, adjust voltage with R100 to 6.5V if you use 1M multimeter (internal resistance) or adjust the voltage to 57V if you
+use 10M multimeter. This will get you 400V on the tube. Refer to tubes.png for the value that you need
 
 Use formula: Vout=Vread*((60M+Rvoltmeter)/Rvoltmeter.)
 
-
+Do NOT measure the high voltage directly on the tube 
 
 
 
