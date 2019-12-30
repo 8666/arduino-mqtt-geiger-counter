@@ -2,9 +2,9 @@
 
 You can get all of the components on AliExpress or any similar site. 
 
-1. Geiger counter kit. Search for "diy geiger counter" 
-2. Ethernet module W5500. 
-3. Arduino Nano
+1. Geiger counter kit. Search for "diy geiger counter" ( ~30 EUR )
+2. Ethernet module W5500.  ( ~3 EUR )
+3. Arduino Nano ( ~2 EUR )
 4. Jumper wires
 5. Stable 5V power supply.
 
@@ -26,7 +26,26 @@ Also I added heatshrink over the tube, that should eliminate beta radiation and 
 TBD
 
 
-The geiger coutner kit should be calibrated. There is a potentiometer that should be ajdusted with a small screwdriver.
+The geiger coutner kit should be calibrated. There is a potentiometer that should be ajdusted with a small screwdriver. You will need a multimeter to measure the volage on the test point.
+
+Different tubes need different voltage but there is a good chance that the adjustment is already done in factory. Calibration is done without the tube.
+
+1. Trim R100 potentiometer to approximately 50 ohm when kit power is off.
+2. Short J4 with a jumper. This will expose the high voltage on J2 point
+3. Set your multimeter on 200V DC range.
+4. Connect 5V
+5. Measure voltage between GND and J2 point
+
+Most likely you will get a kit with J305β tube
+The recommended voltege for it is 350V
+
+Adjust voltage with R100 to 6.5V if you use 1M multimeter (internal resistance) or adjust the voltage to 57V if you
+use 10M multimeter.
+
+Use formula: Vout=Vread*((60M+Rvoltmeter)/Rvoltmeter.)
+
+
+
 
 
 **Processing data**
