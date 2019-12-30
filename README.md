@@ -23,12 +23,10 @@ Also I added heatshrink over the tube, that should eliminate beta radiation and 
 
 **Calibration**
 
-TBD
-
 
 The geiger coutner kit should be calibrated. There is a potentiometer that should be ajdusted with a small screwdriver. You will need a multimeter to measure the volage on the test point.
 
-Different tubes need different voltage but there is a good chance that the adjustment is already done in factory. Calibration is done without the tube.
+Different tubes need different voltage but there is a good chance that the adjustment is already done in factory. Calibration is done WITHOUT the tube.
 
 1. Trim R100 potentiometer to approximately 50 ohm when kit power is off.
 2. Short J4 with a jumper. This will expose the high voltage on J2 point
@@ -36,8 +34,8 @@ Different tubes need different voltage but there is a good chance that the adjus
 4. Connect 5V
 5. Measure voltage between GND and J2 point
 
-Most likely you will get a kit with J305β tube
-The recommended voltsge for it is 350V
+Most likely you will get a kit with a J305β tube
+The recommended voltage for it is 350V
 
 For example, adjust voltage with R100 to 6.5V if you use 1M multimeter (internal resistance) or adjust the voltage to 57V if you
 use 10M multimeter. This will get you 400V on the tube. Refer to tubes.png for the value that you need
@@ -50,7 +48,16 @@ Do NOT measure the high voltage directly on the tube
 
 **Processing data**
 
-MQTT data are processed with Node-Red. I calculate hourly average and check if there is some probelm with the measurments (no new data avaialble)
+The kit is providing pulses that should be counted
+
+The formula is:
+Radiation[uSv/h] = CPM * index
+
+CPM is the pulses per minute value and index is spceific constant for each tube
+For J305β index is 0.00812037
+
+
+MQTT data can be processed with Node-Red. I calculate hourly average and check if there is some probelm with the measurments (no new data avaialble)
 
 TBD Post Node-Red flow..
 
