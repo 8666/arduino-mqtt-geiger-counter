@@ -69,11 +69,14 @@ For J305β index is 0.00812037
 
 MQTT data can be processed with Node-Red. I calculate hourly average and check if there is some probelm with the measurments (no new data avaialble)
 
+![Alt text](https://raw.githubusercontent.com/8666/arduino-mqtt-geiger-counter/master/node-red-flow.png "Flow")
+
 TBD Post Node-Red flow..
 
 I use Grafana to produce charts so I have something like this (Green line is 5min average, purple line is hour average)
 
 ![Alt text](https://raw.githubusercontent.com/8666/arduino-mqtt-geiger-counter/master/results-chart.png "Chart")
+
 
 **Publishing the data**
 
