@@ -66,7 +66,7 @@ MQTT data can be processed with Node-Red. I calculate hourly average and check i
 
 TBD Post Node-Red flow..
 
-I use Grafana to produce charts so I have something like this (Green is 5min average and purple is hour average.
+I use Grafana to produce charts so I have something like this (Green line is 5min average, purple line is hour average)
 
 ![Alt text](https://raw.githubusercontent.com/8666/arduino-mqtt-geiger-counter/master/results-chart.png "Chart")
 
