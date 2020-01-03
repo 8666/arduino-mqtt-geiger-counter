@@ -36,7 +36,7 @@ Different tubes need different voltage but there is a good chance that the adjus
 
 Most likely you will get a kit with a J305β tube
 
-![Alt text](https://raw.githubusercontent.com/8666/arduino-mqtt-geiger-counter/master/%D1%98305.png "Tubes")
+![Alt text](https://raw.githubusercontent.com/8666/arduino-mqtt-geiger-counter/master/%D1%98305.png "My tube")
 
 The recommended voltage for it is 350V
 
@@ -66,7 +66,9 @@ MQTT data can be processed with Node-Red. I calculate hourly average and check i
 
 TBD Post Node-Red flow..
 
+I use Grafana to produce charts so I have something like this (Green is 5min average and purple is hour average.
 
+![Alt text](https://raw.githubusercontent.com/8666/arduino-mqtt-geiger-counter/master/results-chart.png "Chart")
 
 **Publishing the data**
 
@@ -80,3 +82,11 @@ The webhook looks like this:
 http://radmon.org/radmon.php?function=submit&user=USERNAME&password=PASSWORD&unit=CPM&value=MEASURED
 
 Comparing the data with other people is almost impossible. Different tubes produce different measurments but after a month you will have a good picture about the average background radiation. 
+
+
+**Testing**
+
+
+WARNING: Radioactive materials are dangerous goods. Proper handling is needed. Do not attempt to do anything before doing a research. 
+
+You can test the tube by putting some radiactive metrial next to the kit. Most common source is an old fire/smoke detector that contains ionization chamber. It produces a tiny ammount of gamma radiation. You will notice increased number of flashes on the LED.  
