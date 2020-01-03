@@ -56,7 +56,12 @@ Do NOT measure the high voltage directly on the tube
 The kit is providing pulses that should be counted
 
 The formula is:
-Radiation[uSv/h] = CPM * index
+
+Radiation[uSv/h] = CPM * index 
+
+or
+
+Radiation[nSv/h] = CPM * index * 1000 (I prefer nano)
 
 CPM is the pulses per minute value and index is spceific constant for each tube
 For J305β index is 0.00812037
