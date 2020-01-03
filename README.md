@@ -67,7 +67,7 @@ CPM is the pulses per minute value and index is spceific constant for each tube
 For J305β index is 0.00812037
 
 
-MQTT data can be processed with Node-Red. I calculate hourly average and check if there is some probelm with the measurments (no new data avaialble)
+MQTT data can be processed with Node-Red. I calculate hourly average and check if there is some probelm with the measurments (no new data available)
 
 ![Alt text](https://raw.githubusercontent.com/8666/arduino-mqtt-geiger-counter/master/node-red-flow.png "Flow")
 
